@@ -1,0 +1,403 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f2f2;
+}
+
+.menu-principal ul {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe8d8;
+    position: relative;
+}
+
+.logo-menu {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-menu img {
+    display: block;
+    width: 80px;
+    height: auto;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    /*faz com que o link ocupe todo o espaço do elemento pai*/
+    padding: 20px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.menu-principal a:hover {
+    /*efeito ao passar o mouse sobre o link*/
+    background-color: #ffffff;
+    color: #c4723b;
+}
+
+.hero {
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/pratoBalanceado.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.hero-content {
+    text-align: center;
+    background-color: rgba(154, 255, 151, 0.397);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    /*define o tamanho da fonte do título principal*/
+    margin-top: 0;
+    /*remove a margem superior do título*/
+    margin-bottom: 15px;
+    /*adiciona uma margem inferior de 20px*/
+}
+
+.hero-content p {
+    font-size: 20px;
+    /*define o tamanho da fonte do parágrafo*/
+    margin-bottom: 30px;
+    /*adiciona uma margem inferior de 20px*/
+}
+
+.hero-button {
+    text-decoration: none;
+    /*remove o sublinhado do link*/
+    color: #000000;
+    /*define a cor do texto como branco*/
+    background-color: #b5f7b3;
+    /*define a cor de fundo do botão*/
+    padding: 15px 30px;
+    /*adiciona um espaçamento interno de 15px vertical e 30px horizontal*/
+    text-decoration: none;
+    /*remove o sublinhado do link*/
+    font-weight: bold;
+    /*define o peso da fonte como negrito*/
+    display: inline-block;
+    /*faz com que o link se comporte como um bloco inline, permitindo definir largura e altura*/
+    border-radius: 5px;
+    /*arredonda os cantos do botão*/
+    font-size: 18px;
+    /*define o tamanho da fonte do botão*/
+    transition: background-color 0.3s ease;
+    /*adiciona uma transição suave para a cor de fundo ao passar o mouse*/
+}
+
+.hero-button:hover {
+    background-color: #15df40;
+    color: #ffffff;
+    /*altera a cor do texto ao passar o mouse*/
+}
+
+.features-container {
+    display: flex;
+    gap: 20px;
+    padding: 60px 40px;
+
+}
+
+.feature-card {
+    flex: 1;
+    background-color: #e4ffe3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.256);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+footer {
+    background-color: #ffe8d8;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.sobre-nos {
+    background-color: #f5f5f5;
+    padding: 60px 40px;
+    display: flex;
+    gap: 5px;
+}
+
+.sobre-imagem {
+    padding-left: 50px;
+    flex: 1;
+}
+
+.sobre-imagem img {
+    max-width: 90%;
+    display: block;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.sobre-texto {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.sobre-clinica-main {
+    background-color: #e5ffdc;
+    padding: 60px 40px;
+    display: flex;
+    gap: 5px;
+}
+
+.sobre-clinica {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.sobre-imagem-2 {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.sobre-imagem-2 img {
+    max-width: 100%;
+    display: block;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.contato {
+    background-color: #d8ffd8;
+    padding: 60px 40px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contato-img {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.contato-img img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.contato-form {
+    flex: 1;
+    padding-right: 50px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    background-color: #ffffff;
+}
+
+.contato-tel {
+    background-color: #ffe8d8;
+    padding: 60px 40px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-items: first baseline;
+}
+
+.contato-telefone {
+    flex: 1;
+    padding-left: 50px;
+    background-color: #c2fdc0;
+    padding: 60px 40px;
+    display: flex;
+    gap: 5px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.contato-whatsapp {
+    flex: 1;
+    padding-right: 10px;
+    justify-items: last baseline;
+}
+
+.contato-whatsapp img {
+    height: 100px;
+    max-width: 100%;
+    display: block;
+}
+
+.contato-tel a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 20px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.contato-tel a:hover {
+    background-color: #ffffff;
+    color: #c4723b;
+}
+
+@media (max-width: 768px) {
+    .menu-principal {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 10px;
+    }
+
+    .menu-togle {
+        display: none !important;
+    }
+
+    .menu-principal ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .menu-principal a {
+        display: block;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+        background-color: #ffffff;
+    }
+
+    .menu-principal a:hover {
+        background-color: #e0e0e0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .features-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .sobre-nos {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    .sobre-imagem {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .sobre-imagem img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .sobre-clinica-main {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    .sobre-imagem-2 {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .sobre-imagem-2 img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .sobre-texto {
+        padding-right: 0;
+    }
+
+    .sobre-clinica {
+        padding-left: 0;
+    }
+
+    .contato {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .contato-form {
+        padding-right: 0;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .contato-img {
+        width: 100%;
+    }
+
+    .contato-img img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contato-tel {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .contato-telefone {
+        padding-left: 0;
+    }
+
+    .contato-whatsapp {
+        padding-right: 0;
+    }
+}
